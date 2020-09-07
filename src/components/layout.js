@@ -1,13 +1,13 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Col, Container, Row, Button } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 
 import Header from './header'
 
 const Layout = ({ children }) => {
   const {
     site: {
-      siteMetadata: { author, title },
+      siteMetadata: { author, title, links },
     },
   } = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -15,17 +15,24 @@ const Layout = ({ children }) => {
         siteMetadata {
           author
           title
+          links {
+            home
+            about
+            projects
+            contact
+          }
         }
       }
     }
   `)
 
   return (
-    <Container fluid>
+    <>
       <Row noGutters>
-        <Header author={author} title={title} />
+        <Header author={author} title={title} links={links} />
       </Row>
-    </Container>
+      <Row as='main'>{children}</Row>
+    </>
   )
 }
 
