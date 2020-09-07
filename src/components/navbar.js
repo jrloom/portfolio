@@ -4,9 +4,6 @@ import { Link } from 'gatsby'
 const NavBar = ({ links: { home, about, projects, contact } }) => {
   return (
     <>
-      <Link className='text-link' to={about}>
-        About
-      </Link>
       <Link className='text-link' to={projects}>
         Projects
       </Link>

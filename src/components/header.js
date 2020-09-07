@@ -22,7 +22,7 @@ const Header = ({ author, title, links }, ...props) => {
             </Row>
           </Link>
         </Col>
-        <Col xs={12} lg={8} as='nav' className='d-flex justify-content-around '>
+        <Col xs={12} lg={4} as='nav' className='d-flex justify-content-around'>
           <NavBar links={links} />
         </Col>
       </Row>
