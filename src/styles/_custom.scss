@@ -1,0 +1,25 @@
+$theme-colors: (
+  'primary': #041b25,
+  // 'secondary': #3e8d88,
+  'secondary': #ff8b50,
+  'link': #ff8b50,
+  'icon': #00c6ac,
+  // 'success': ,
+  'danger': #ff4136,
+  // 'warning': ,
+  // 'info': ,
+  'light': #fff7d6,
+  // 'dark': ,
+  'black': #01070a,
+  'white': #ffffff,
+);
+
+$body-bg: #072737;
+// $body-bg: #e0f1ef;
+// $body-color: ;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+a:hover {
+  text-decoration: none;
+}
