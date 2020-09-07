@@ -3,6 +3,12 @@ module.exports = {
     title: `Full Stack Developer`,
     description: `something awesome`,
     author: `Jason Loomis`,
+    links: {
+      home: '/',
+      about: '/about',
+      projects: '/projects',
+      contact: '/contact',
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
