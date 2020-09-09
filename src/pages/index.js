@@ -32,8 +32,7 @@ export default IndexPage
 //   }
 // `
 
-{
-  /* <Layout>
+/* <Layout>
 <SEO title='Home' />
 <Container>
   <Row className='mb-5'>
@@ -62,4 +61,3 @@ export default IndexPage
   </Row>
 </Container>
 </Layout> */
-}
