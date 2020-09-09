@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
+import { OverlayTrigger, Tooltip } from 'react-bootstrap'
 import { AiFillApi } from 'react-icons/ai'
 import { IoMdText } from 'react-icons/io'
 import { FaCogs } from 'react-icons/fa'
