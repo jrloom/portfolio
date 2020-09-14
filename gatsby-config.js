@@ -14,12 +14,20 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/constants`,
       },
     },
     {
@@ -42,6 +50,12 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: `gatsby-source-custom-api`,
+    //   options: {
+    //     url: `${__dirname}/src/constants/projects.js`,
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
