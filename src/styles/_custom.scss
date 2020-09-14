@@ -28,6 +28,14 @@ a:hover {
   font-size: 2rem;
 }
 
+.carousel-indicators {
+  display: none;
+}
+
+.external-link-icon {
+  font-size: 1rem;
+}
+
 .fade-in {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
