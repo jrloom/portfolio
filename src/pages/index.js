@@ -30,7 +30,9 @@ const IndexPage = () => (
       </Col>
     </Row>
     <Row className='mb-5 p-3 bg-primary border border-black rounded'>
-      <Projects />
+      <Col>
+        <Projects />
+      </Col>
     </Row>
     <Row className='d-flex flex-wrap mb-5 p-4 bg-primary border border-black rounded'>
       <Col className='d-flex flex-column justify-content-around mr-4 p-4 text-light margin-fix'>
