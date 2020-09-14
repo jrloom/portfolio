@@ -6,7 +6,7 @@ import NavBar from './navbar'
 
 const Header = ({ author, title, links }) => (
   <Container as='header' fluid className='mb-5'>
-    <Row className='d-flex flex-wrap align-items-center justify-content-center mb-5 p-4  bg-black'>
+    <Row className='d-flex flex-wrap align-items-center justify-content-center mb-5 p-4 bg-black'>
       <Col xs={6} lg={4} className='header-btm-margin'>
         <Link to={links.home} className='d-flex flex-column align-items-center'>
           <Row as='h1' noGutters className='text-light text-nowrap'>

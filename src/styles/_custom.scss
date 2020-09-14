@@ -23,3 +23,54 @@ $body-bg: #072737;
 a:hover {
   text-decoration: none;
 }
+
+.icon {
+  font-size: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #0b374d;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #0b374d;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header-btm-margin {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .margin-fix {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}

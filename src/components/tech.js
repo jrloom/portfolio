@@ -14,14 +14,6 @@ const icons = {
   Git: 'SiGit',
 }
 
-const Tech = () => (
-  <Container>
-    <Row className='d-none d-sm-block w-50 mx-auto pt-3 pb-3 bg-primary border border-black rounded'>
-      <Col as='h3' className='d-flex justify-content-around fade-in text-icon'>
-        <Icons icons={icons} />
-      </Col>
-    </Row>
-  </Container>
-)
+const Tech = () => <Icons icons={icons} />
 
 export default Tech
