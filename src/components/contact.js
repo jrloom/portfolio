@@ -7,14 +7,19 @@ const ContactForm = () => {
   const { handleSubmit, handleChange, valid, inputs } = useContact()
 
   return (
-    <Form onSubmit={handleSubmit} noValidate validated={valid} id='contact'>
+    <Form
+      action='https://formspree.io/mleorjjg'
+      method='POST'
+      noValidate
+      validated={valid}
+      id='contact'
+    >
+      <input type='text' name='_gotcha' style={{ display: 'none' }} />
       <Form.Group>
         <Form.Control
-          onChange={handleChange}
-          name='first name'
-          value={inputs.firstName}
-          aria-label='first name'
-          placeholder='First name'
+          name='name'
+          aria-label='name'
+          placeholder='Name'
           type='text'
           required
         />
@@ -24,23 +29,7 @@ const ContactForm = () => {
       </Form.Group>
       <Form.Group>
         <Form.Control
-          onChange={handleChange}
-          name='last name'
-          value={inputs.lasttName}
-          aria-label='last name'
-          placeholder='Last name'
-          type='text'
-          required
-        />
-        <Form.Control.Feedback type='invalid'>
-          Please provide your last name
-        </Form.Control.Feedback>
-      </Form.Group>
-      <Form.Group>
-        <Form.Control
-          onChange={handleChange}
-          name='email'
-          value={inputs.email}
+          name='_replyto'
           aria-label='email'
           placeholder='Email'
           type='email'
@@ -51,16 +40,13 @@ const ContactForm = () => {
         </Form.Control.Feedback>
       </Form.Group>
       <Form.Group>
-        <Form.Control
-          as='textarea'
-          rows='8'
-          onChange={handleChange}
-          name='message'
-          value={inputs.message}
-          aria-label='text'
-        />
+        <Form.Control as='textarea' rows='8' name='message' aria-label='text' />
       </Form.Group>
-      <Button type='submit' className='btn btn-secondary btn-block'>
+      <Button
+        type='submit'
+        value='Send'
+        className='btn btn-secondary btn-block'
+      >
         Send
       </Button>
     </Form>
