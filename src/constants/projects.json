@@ -14,7 +14,7 @@
     "image": {
       "url": "../images/placeholder.jpg"
     },
-    "tech": ["React", "PostgreSQL"]
+    "tech": ["SiReact", "SiGraphql"]
   },
   {
     "id": "01",
@@ -31,6 +31,6 @@
     "image": {
       "url": "../images/placeholder03.jpg"
     },
-    "tech": ["React", "PostgreSQL"]
+    "tech": ["SiReact", "SiGraphql"]
   }
 ]
