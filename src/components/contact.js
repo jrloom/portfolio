@@ -17,7 +17,6 @@ const ContactForm = () => {
           placeholder='First name'
           type='text'
           required
-          size='lg'
         />
         <Form.Control.Feedback type='invalid'>
           Please provide your first name
@@ -32,7 +31,6 @@ const ContactForm = () => {
           placeholder='Last name'
           type='text'
           required
-          size='lg'
         />
         <Form.Control.Feedback type='invalid'>
           Please provide your last name
@@ -47,7 +45,6 @@ const ContactForm = () => {
           placeholder='Email'
           type='email'
           required
-          size='lg'
         />
         <Form.Control.Feedback type='invalid'>
           Please provide your email
@@ -63,7 +60,7 @@ const ContactForm = () => {
           aria-label='text'
         />
       </Form.Group>
-      <Button variant='secondary' type='submit'>
+      <Button type='submit' className='btn btn-secondary btn-block'>
         Send
       </Button>
     </Form>
